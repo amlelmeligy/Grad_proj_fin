@@ -170,17 +170,17 @@ class _HomeState extends State<Home> {
                                   child: Column(
                                     children: [
                                       Container(
-                                        height: 25,
+                                        height: 15,
                                       ),
                                       Container(
-                                        padding: const EdgeInsets.only(top: 5),
+                                        padding: const EdgeInsets.only(top: 15),
                                         child: const Text("Favorite",
                                             style: TextStyle(
                                                 fontSize: 17,
                                                 fontWeight: FontWeight.bold)),
                                       ),
                                       Container(
-                                        padding: const EdgeInsets.all(10),
+                                        padding: const EdgeInsets.all(5),
                                         child: const Divider(
                                           color: Color.fromARGB(
                                               255, 167, 191, 211),
@@ -191,7 +191,7 @@ class _HomeState extends State<Home> {
                                       Container(
                                           child: Lottie.asset(
                                               'assets/images/start.json',
-                                              width: 50)),
+                                              width: 45)),
                                     ],
                                   ),
                                 ),
