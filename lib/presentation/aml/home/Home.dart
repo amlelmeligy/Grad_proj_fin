@@ -44,17 +44,22 @@ class _HomeState extends State<Home> {
                         children: [
                           InkWell(
                             onTap: () {
-                              Navigator.push(context, MaterialPageRoute(builder: (context) => Search(),));
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => Search(),
+                                  ));
                             },
                             child: Container(
                               width: 265,
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 mainAxisAlignment: MainAxisAlignment.start,
-
                                 children: [
-                                  SizedBox(width: 20,)
-                            ,                                Icon(Icons.search),
+                                  SizedBox(
+                                    width: 20,
+                                  ),
+                                  Icon(Icons.search),
                                 ],
                               ),
                               height: 45,
@@ -130,14 +135,16 @@ class _HomeState extends State<Home> {
                                                 fontSize: 17,
                                                 fontWeight: FontWeight.bold)),
                                       ),
-                                      Container(child: const Divider(
+                                      Container(
+                                        child: const Divider(
                                           color: Color.fromARGB(
                                               255, 167, 191, 211),
                                           thickness: 2,
                                           endIndent: 7,
                                         ),
                                       ),
-                                       Lottie.asset('assets/images/task.json',height: 70)
+                                      Lottie.asset('assets/images/task.json',
+                                          height: 70)
                                     ],
                                   ),
                                 ),
@@ -182,7 +189,9 @@ class _HomeState extends State<Home> {
                                         ),
                                       ),
                                       Container(
-                                          child:Lottie.asset('assets/images/start.json',width: 50)),
+                                          child: Lottie.asset(
+                                              'assets/images/start.json',
+                                              width: 50)),
                                     ],
                                   ),
                                 ),
@@ -227,7 +236,9 @@ class _HomeState extends State<Home> {
                                         ),
                                       ),
                                       Container(
-                                          child: Lottie.asset('assets/images/trash.json',width: 40)),
+                                          child: Lottie.asset(
+                                              'assets/images/trash.json',
+                                              width: 40)),
                                     ],
                                   ),
                                 ),
