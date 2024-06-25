@@ -51,7 +51,7 @@ class _HomeState extends State<Home> {
                                   ));
                             },
                             child: Container(
-                              width: 265,
+                              width: 300,
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 mainAxisAlignment: MainAxisAlignment.start,
@@ -70,7 +70,7 @@ class _HomeState extends State<Home> {
                             ),
                           ),
                           Container(
-                            padding: const EdgeInsets.only(left: 5),
+                            padding: const EdgeInsets.only(left: 20),
                             child: IconButton(
                                 onPressed: () {
                                   Navigator.of(context).push(
