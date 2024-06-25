@@ -45,7 +45,7 @@ class thankYou extends StatelessWidget {
                       style: TextStyle(fontSize: 20),
                     ),
                     Text(
-                      "01/24/2023",
+                      "06/26/2024",
                       style:
                           TextStyle(fontSize: 19, fontWeight: FontWeight.bold),
                     )
@@ -106,7 +106,7 @@ class thankYou extends StatelessWidget {
                           TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                     ),
                     Text(
-                      "50.97",
+                      "50.00",
                       style:
                           TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                     )
