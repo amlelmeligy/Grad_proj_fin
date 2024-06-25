@@ -34,8 +34,8 @@ class _profileState extends State<profile> {
             )),
             Container(
               padding: EdgeInsets.only(top: 10),
-              width: 90,
-              height: 90,
+              width: 100,
+              height: 100,
               child: Center(
                   child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
@@ -46,7 +46,7 @@ class _profileState extends State<profile> {
               child: Center(
                   child: Text(
                 "${CacheNetwork.getCacheData(key: 'name')}",
-                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               )),
             ),
             Center(

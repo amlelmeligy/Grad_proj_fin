@@ -43,6 +43,16 @@ class _addTaskState extends State<addTask> {
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      Center(
+                        child: Container(
+                          padding: EdgeInsets.only(top: 10, bottom: 10),
+                          child: Text(
+                            "Create New Task",
+                            style: TextStyle(
+                                fontSize: 22, fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ),
                       Container(
                         padding: const EdgeInsets.only(top: 10),
                         child: Row(
