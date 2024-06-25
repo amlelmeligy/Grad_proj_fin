@@ -11,6 +11,13 @@ class appointment extends StatefulWidget {
 }
 
 DateTime today = DateTime.now();
+void _onDaySelected(DateTime day, DateTime focusedDay) {
+  setState(() {
+    today = day;
+  });
+}
+
+void setState(Null Function() param0) {}
 
 bool int_1 = true;
 bool int_2 = true;
@@ -31,14 +38,29 @@ class _appointmentState extends State<appointment> {
         title: Text("Book an Appointment"),
       ),
       body: Container(
-        padding: EdgeInsets.only(top: 15, left: 25, right: 25),
+        padding: EdgeInsets.only(top: 5, left: 25, right: 25),
         child: ListView(
           children: [
+            Center(
+              child: Container(
+                padding: EdgeInsets.only(top: 0),
+                child: Text(
+                  "Selected Day : " + today.toString().split(" ")[0],
+                  style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
             Container(
               decoration: BoxDecoration(
                   color: Color.fromRGBO(255, 255, 255, 0.612),
                   borderRadius: BorderRadius.circular(20)),
               child: TableCalendar(
+                locale: "en_US",
+                rowHeight: 43,
+                headerStyle: HeaderStyle(
+                    formatButtonVisible: false, titleCentered: true),
+                availableGestures: AvailableGestures.all,
+                selectedDayPredicate: (day) => isSameDay(day, today),
                 focusedDay: today,
                 firstDay: DateTime.utc(2010, 10, 16),
                 lastDay: DateTime.utc(2025, 12, 31),

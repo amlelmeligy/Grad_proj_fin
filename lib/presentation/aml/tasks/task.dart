@@ -13,6 +13,13 @@ class task extends StatefulWidget {
 }
 
 DateTime today = DateTime.now();
+void _onDaySelected(DateTime day, DateTime focusedDay) {
+  setState(() {
+    today = day;
+  });
+}
+
+void setState(Null Function() param0) {}
 
 class _taskState extends State<task> {
   @override
@@ -33,13 +40,27 @@ class _taskState extends State<task> {
                 : Column(
                     children: [
                       Container(
+                        padding: EdgeInsets.only(top: 10),
+                        child: Text(
+                          "Selected Day : " + today.toString().split(" ")[0],
+                          style: TextStyle(
+                              fontSize: 17, fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Container(
                         decoration: BoxDecoration(
                             color: Color.fromRGBO(121, 152, 155, 0.612),
                             borderRadius: BorderRadius.circular(20)),
                         padding: EdgeInsets.only(top: 15, left: 30, right: 30),
                         margin: EdgeInsets.only(
-                            left: 20, right: 20, top: 20, bottom: 20),
+                            left: 20, right: 20, top: 10, bottom: 20),
                         child: TableCalendar(
+                          locale: "en_US",
+                          rowHeight: 43,
+                          headerStyle: HeaderStyle(
+                              formatButtonVisible: false, titleCentered: true),
+                          availableGestures: AvailableGestures.all,
+                          selectedDayPredicate: (day) => isSameDay(day, today),
                           focusedDay: today,
                           firstDay: DateTime.utc(2010, 10, 16),
                           lastDay: DateTime.utc(2025, 12, 31),
