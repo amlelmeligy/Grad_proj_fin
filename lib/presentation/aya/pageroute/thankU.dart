@@ -11,7 +11,7 @@ class thank extends StatelessWidget {
         child: ListView(
           children: [
             Container(
-              child: Image.asset("assets/images/5.png"),
+              child: Image.asset("assets/images/img112.png"),
             ),
             Container(
               child: Icon(
@@ -36,7 +36,7 @@ class thank extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(top: 10),
+              margin: EdgeInsets.only(top: 10, left: 10, right: 10),
               child: Text(
                 "Don’t Forget send your feedback to US Thank you    ",
                 textAlign: TextAlign.center,
@@ -45,7 +45,7 @@ class thank extends StatelessWidget {
             ),
             Container(
               height: 50,
-              margin: EdgeInsets.only(top: 120, right: 20, left: 20),
+              margin: EdgeInsets.only(top: 70, right: 20, left: 20),
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Color.fromARGB(255, 32, 93, 144),
@@ -56,7 +56,7 @@ class thank extends StatelessWidget {
                 },
                 child: Text(
                   "Go to Home",
-                  style: TextStyle(fontSize: 25),
+                  style: TextStyle(fontSize: 25, color: Colors.white),
                   textAlign: TextAlign.center,
                 ),
               ),
