@@ -11,13 +11,13 @@ class appointment extends StatefulWidget {
 }
 
 DateTime today = DateTime.now();
-void _onDaySelected(DateTime day, DateTime focusedDay) {
-  setState(() {
-    today = day;
-  });
-}
+// void _onDaySelected(DateTime day, DateTime focusedDay) {
+//   setState(() {
+//     today = day;
+//   });
+// }
 
-void setState(Null Function() param0) {}
+// void setState(Null Function() param0) {}
 
 bool int_1 = true;
 bool int_2 = true;

@@ -81,12 +81,12 @@ class _aboutDoctorsState extends State<aboutDoctors> {
                     },
                     icon: Icon(
                       click
-                          ? FontAwesomeIcons.solidHeart
-                          : FontAwesomeIcons.heart,
+                          ? FontAwesomeIcons.heart
+                          : FontAwesomeIcons.solidHeart,
                     ),
                     color: click
-                        ? Color.fromARGB(255, 61, 125, 177)
-                        : Color.fromARGB(255, 255, 255, 255),
+                        ? Colors.grey[800]
+                        : Color.fromARGB(255, 61, 125, 177),
                   ),
                 ),
                 Container(
