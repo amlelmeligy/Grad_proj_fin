@@ -13,11 +13,12 @@ bool click = true;
 class _doctorsState extends State<doctors> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(
-      backgroundColor: Color.fromARGB(255, 246, 242, 242),
-      centerTitle: true,
-      title: Text("All Doctors"),
-    ),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 246, 242, 242),
+        centerTitle: true,
+        title: Text("All Doctors"),
+      ),
       body: Container(
         color: Color.fromARGB(255, 246, 242, 242),
         child: ListView(children: [
@@ -44,7 +45,7 @@ class _doctorsState extends State<doctors> {
               borderRadius: BorderRadius.circular(15),
             ),
             child: aboutDoctors(
-                img:"10.png",
+                img: "10.png",
                 name: "Dr. Ahmed Yassin",
                 title: "Psychiatric and neurological consultant"),
           ),
