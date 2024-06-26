@@ -3,8 +3,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:pie_chart/pie_chart.dart';
 
 class analytics extends StatefulWidget {
-
-
   @override
   State<analytics> createState() => _analyticsState();
 }
@@ -31,9 +29,10 @@ class _analyticsState extends State<analytics> {
             Container(
               child: Row(
                 children: [
+                  SizedBox(width: 5),
                   Container(
                     padding: EdgeInsets.all(10),
-                    width: 90,
+                    width: 100,
                     height: 70,
                     decoration: BoxDecoration(
                         border: Border.all(
@@ -54,7 +53,7 @@ class _analyticsState extends State<analytics> {
                       ],
                     ),
                   ),
-                  SizedBox(width: 10),
+                  SizedBox(width: 30),
                   Container(
                     padding: EdgeInsets.all(10),
                     width: 110,
@@ -78,7 +77,7 @@ class _analyticsState extends State<analytics> {
                       ],
                     ),
                   ),
-                  SizedBox(width: 10),
+                  SizedBox(width: 35),
                   Container(
                     padding: EdgeInsets.all(10),
                     width: 105,
@@ -132,7 +131,7 @@ class _analyticsState extends State<analytics> {
                             fontWeight: FontWeight.bold),
                         textAlign: TextAlign.center,
                       )),
-                  SizedBox(width: 5),
+                  SizedBox(width: 35),
                   Container(
                       padding: EdgeInsets.only(left: 10, right: 10, top: 20),
                       width: 100,
@@ -150,7 +149,7 @@ class _analyticsState extends State<analytics> {
                             fontWeight: FontWeight.bold),
                         textAlign: TextAlign.center,
                       )),
-                  SizedBox(width: 5),
+                  SizedBox(width: 35),
                   Container(
                       padding: EdgeInsets.only(left: 10, right: 10, top: 20),
                       width: 100,
